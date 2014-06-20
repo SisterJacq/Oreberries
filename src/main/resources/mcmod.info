@@ -1,0 +1,16 @@
+[
+{
+  "modid": "oreberries",
+  "name": "Mortvana's Oreberries",
+  "description": "Adding back Oreberries, because I can? Someone give me a better description...",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Mortvana"],
+  "credits": "mDiyo for making Oreberries in the first place",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

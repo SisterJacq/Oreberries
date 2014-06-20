@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class OreberryItem extends SimpleItem {
-    public static String[] names = new String[] { "iron", "gold", "copper", "tin", "aluminum", "essence" };
+    public static String[] names = new String[] { "iron", "gold", "copper", "tin", "aluminium", "essence" };
     public static String[] tex = new String[] { "iron_oreberry", "gold_oreberry", "copper_oreberry", "tin_oreberry", "aluminium_oreberry", "essence_oreberry" };
 
     public OreberryItem(int id)

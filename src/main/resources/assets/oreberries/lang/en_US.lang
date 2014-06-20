@@ -1,47 +1,47 @@
-block.oreberry.iron.name = Iron Oreberry Bush
-block.oreberry.gold.name = Gold Oreberry Bush
-block.oreberry.copper.name = Copper Oreberry Bush
-block.oreberry.tin.name = Tin Oreberry Bush
-block.oreberry.aluminium.name = Aluminium Oreberry Bush
-block.oreberry.essence.name = Essence Berry Bush
+block.oreberry.iron.name=Iron Oreberry Bush
+block.oreberry.gold.name=Gold Oreberry Bush
+block.oreberry.copper.name=Copper Oreberry Bush
+block.oreberry.tin.name=Tin Oreberry Bush
+block.oreberry.aluminium.name=Aluminium Oreberry Bush
+block.oreberry.essence.name=Essence Berry Bush
 
-itemGroup.oreberries =  Mortvana's Oreberries
+itemGroup.oreberries=Mortvana's Oreberries
 
-item.oreberry.iron.name = Iron Oreberry
-item.oreberry.gold.name = Gold Oreberry
-item.oreberry.copper.name = Copper Oreberry
-item.oreberry.tin.name = Tin Oreberry
-item.oreberry.aluminium.name = Aluminium Oreberry
-item.oreberry.essence.name = Concentrated Essence Berry
+item.oreberry.iron.name=Iron Oreberry
+item.oreberry.gold.name=Gold Oreberry
+item.oreberry.copper.name=Copper Oreberry
+item.oreberry.tin.name=Tin Oreberry
+item.oreberry.aluminium.name=Aluminium Oreberry
+item.oreberry.essence.name=Concentrated Essence Berry
 
-item.oreberryIngot.copper.name = Copper Ingot
-item.oreberryIngot.tin.name = Tin Ingot
-item.oreberryIngot.aluminium.name = Aluminium Ingot
+item.oreberryIngot.copper.name=Copper Ingot
+item.oreberryIngot.tin.name=Tin Ingot
+item.oreberryIngot.aluminium.name=Aluminium Ingot
 
-item.oreberryNugget.iron.name = Iron Nugget
-item.oreberryNugget.copper.name = Copper Nugget
-item.oreberryNugget.tin.name = Tin Nugget
-item.oreberryNugget.aluminium.name = Aluminium Nugget
+item.oreberryNugget.iron.name=Iron Nugget
+item.oreberryNugget.copper.name=Copper Nugget
+item.oreberryNugget.tin.name=Tin Nugget
+item.oreberryNugget.aluminium.name=Aluminium Nugget
 
-oreberrybush1.tooltip = Sweet Irony
-oreberrybush2.tooltip = Pure Luster
-oreberrybush3.tooltip = Tastes like metal
-oreberrybush4.tooltip = Tin Man
-oreberrybush5.tooltip = White Chocolate
-oreberrybush6.tooltip = Tastes like Creeper
+oreberrybush1.tooltip=Sweet Irony
+oreberrybush2.tooltip=Pure Luster
+oreberrybush3.tooltip=Tastes like metal
+oreberrybush4.tooltip=Tin Man
+oreberrybush5.tooltip=White Chocolate
+oreberrybush6.tooltip=Tastes like Creeper
 
-oreberries1.tooltip = Sweet Irony
-oreberries2.tooltip = Pure Luster
-oreberries3.tooltip = Tastes like metal
-oreberries4.tooltip = Tin Man
-oreberries5.tooltip = White Chocolate
-oreberries6.tooltip = Tastes like Creeper
+oreberries1.tooltip=Sweet Irony
+oreberries2.tooltip=Pure Luster
+oreberries3.tooltip=Tastes like metal
+oreberries4.tooltip=Tin Man
+oreberries5.tooltip=White Chocolate
+oreberries6.tooltip=Tastes like Creeper
 
-nugget1.tooltip = Sweet Irony
-nugget2.tooltip = Tastes like metal
-nugget3.tooltip = Tin Man
-nugget4.tooltip = White Chocolate
+nugget1.tooltip=Sweet Irony
+nugget2.tooltip=Tastes like metal
+nugget3.tooltip=Tin Man
+nugget4.tooltip=White Chocolate
 
-ingot1.tooltip = Tastes like metal
-ingot2.tooltip = Tin Man
-ingot3.tooltip = White Chocolate
+ingot1.tooltip=Tastes like metal
+ingot2.tooltip=Tin Man
+ingot3.tooltip=White Chocolate

@@ -71,7 +71,7 @@ public class OreberryBush2Item extends ItemBlock
         return (new StringBuilder()).append("block.oreberry.").append(blockType[pos]).toString();
     }
 
-    public static final String blockType[] = { "aluminum", "essence", "", "", "aluminum", "essence", "", "", "aluminum", "essence", "", "", "aluminum", "essence", "", "" };
+    public static final String blockType[] = { "aluminium", "essence", "", "", "aluminium", "essence", "", "", "aluminium", "essence", "", "", "aluminium", "essence", "", "" };
 
     @Override
     @SideOnly(Side.CLIENT)
