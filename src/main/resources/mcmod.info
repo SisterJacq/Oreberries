@@ -1,14 +1,14 @@
 [
 {
-  "modid": "oreberries",
-  "name": "Mortvana's Oreberries",
-  "description": "Adding back Oreberries, because I can? Someone give me a better description...",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authors": ["Mortvana"],
-  "credits": "mDiyo for making Oreberries in the first place",
+  "authors": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

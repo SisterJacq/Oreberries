@@ -28,12 +28,15 @@ public class OreberryConfig {
         ingot = config.getItem("Ingot Item", 25001).getInt(25001);
         nugget = config.getItem("Nugget Item", 25002).getInt(25002);
 
-        generateIronBush = config.get("Worldgen Disabler", "Generate Iron Bushes", true).getBoolean(true);
-        generateGoldBush = config.get("Worldgen Disabler", "Generate Gold Bushes", true).getBoolean(true);
-        generateCopperBush = config.get("Worldgen Disabler", "Generate Copper Bushes", true).getBoolean(true);
-        generateTinBush = config.get("Worldgen Disabler", "Generate Tin Bushes", true).getBoolean(true);
-        generateAluminiumBush = config.get("Worldgen Disabler", "Generate Aluminium Bushes", true).getBoolean(true);
-        generateEssenceBush = config.get("Worldgen Disabler", "Generate Essence Bushes", true).getBoolean(true);
+        netherBerries = config.get("Worldgen", "Spawn Oreberries in ALL Dimensions", false).getBoolean(false);
+        dimensionalBerries = config.get("Worldgen", "Spawn Oreberries in all Overworld Dimensions", true).getBoolean(true);
+
+        generateIronBush = config.get("Worldgen", "Generate Iron Bushes", true).getBoolean(true);
+        generateGoldBush = config.get("Worldgen", "Generate Gold Bushes", true).getBoolean(true);
+        generateCopperBush = config.get("Worldgen", "Generate Copper Bushes", true).getBoolean(true);
+        generateTinBush = config.get("Worldgen", "Generate Tin Bushes", true).getBoolean(true);
+        generateAluminiumBush = config.get("Worldgen", "Generate Aluminium Bushes", true).getBoolean(true);
+        generateEssenceBush = config.get("Worldgen", "Generate Essence Bushes", true).getBoolean(true);
 
         ironBushDensity = config.get("Worldgen", "Iron Bush Density", 1).getInt(1);
         goldBushDensity = config.get("Worldgen", "Gold Bush Density", 1).getInt(1);
@@ -49,8 +52,8 @@ public class OreberryConfig {
         aluminiumBushRarity = config.get("Worldgen", "Aluminium Bush Rarity", 2).getInt(2);
         essenceBushRarity = config.get("Worldgen", "Essence Bush Rarity", 6).getInt(6);
 
-        ironBushMinY = config.get("Worldgen", "Iron Bush Min Y", 0).getInt(0);
-        ironBushMaxY = config.get("Worldgen", "Iron Bush Max Y", 60).getInt(60);
+        ironBushMinY = config.get("Worldgen", "Iron Bush Min Y", 32).getInt(32);
+        ironBushMaxY = config.get("Worldgen", "Iron Bush Max Y", 64).getInt(64);
         goldBushMinY = config.get("Worldgen", "Gold Bush Min Y", 0).getInt(0);
         goldBushMaxY = config.get("Worldgen", "Gold Bush Max Y", 30).getInt(30);
         copperBushMinY = config.get("Worldgen", "Copper Bush Min Y", 20).getInt(20);
@@ -69,6 +72,9 @@ public class OreberryConfig {
     public static int oreberries;
     public static int nugget;
     public static int ingot;
+
+    public static boolean netherBerries;
+    public static boolean dimensionalBerries;
 
     public static boolean generateIronBush;
     public static boolean generateGoldBush;

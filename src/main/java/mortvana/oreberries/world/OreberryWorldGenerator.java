@@ -5,11 +5,13 @@ import mortvana.oreberries.common.OreberryConfig;
 import mortvana.oreberries.common.OreberryContent;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraftforge.common.BiomeDictionary;
 
 import java.util.Random;
 
-/*public class OreberryWorldGenerator implements IWorldGenerator
+public class OreberryWorldGenerator implements IWorldGenerator
 {
     public OreberryWorldGenerator()
     {
@@ -24,7 +26,26 @@ import java.util.Random;
     @Override
     public void generate (Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
     {
-        if (world.provider.dimensionId == 0 && world.provider.terrainType != WorldType.FLAT)
+
+        if  (OreberryConfig.netherBerries ==  true){
+            generateOreBushes(random, chunkX * 16, chunkZ * 16, world);
+        }
+
+        else if  (OreberryConfig.dimensionalBerries && world.provider.terrainType != WorldType.FLAT){
+            BiomeGenBase biomeGenBase = world.getBiomeGenForCoords(chunkX * 16, chunkZ * 16);
+            BiomeDictionary.Type[] types = BiomeDictionary.getTypesForBiome(biomeGenBase);
+            for (int i = 0; i < types.length; i++) {
+                if(biomeGenBase == null){
+                    return;
+                }
+                if (types[i] == BiomeDictionary.Type.NETHER || types[i] == BiomeDictionary.Type.END || types[i] == null) {
+                    return; // Exits the generation function
+                }
+            }
+            generateOreBushes(random, chunkX * 16, chunkZ * 16, world);
+        }
+
+        else if (world.provider.dimensionId == 0 && world.provider.terrainType != WorldType.FLAT)
         {
             generateOreBushes(random, chunkX * 16, chunkZ * 16, world);
         }
@@ -38,9 +59,9 @@ import java.util.Random;
             for (int i = 0; i < OreberryConfig.ironBushDensity; i++)
             {
                 xPos = xChunk + random.nextInt(16);
-                yPos = OreberryConfig.seaLevel - 32;
+                yPos = (OreberryConfig.ironBushMaxY + OreberryConfig.ironBushMinY) / 2;
                 zPos = zChunk + random.nextInt(16);
-                yPos = findAdequateLocation(world, xPos, yPos, zPos, OreberryConfig.seaLevel, 0);
+                yPos = findAdequateLocation(world, xPos, yPos, zPos, OreberryConfig.ironBushMaxY, OreberryConfig.ironBushMinY);
                 if (yPos != -1)
                 {
                     ironBush.generate(world, random, xPos, yPos, zPos);
@@ -108,7 +129,7 @@ import java.util.Random;
             for (int i = 0; i < OreberryConfig.silverBushDensity; i++)
             {
                 xPos = xChunk + random.nextInt(16);
-                yPos = OreberryConfig.seaLevel - 16;
+                yPos = 48;
                 zPos = zChunk + random.nextInt(16);
                 yPos = findAdequateLocation(world, xPos, yPos, zPos, 32, 0);
                 if (yPos != -1)
@@ -146,4 +167,4 @@ import java.util.Random;
     OreberryBushGen tinBush;
     OreberryBushGen aluminiumBush;
     OreberryBushGen essenceBush;
-}*/
+}
